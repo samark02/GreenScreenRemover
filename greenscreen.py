@@ -20,8 +20,6 @@ while True:
     gs=np.where(f==0,image,f)
 
     cv2.imshow("frame",frame)
-    # cv2.imshow("mask",mask)
-    # cv2.imshow("final",final)
     cv2.imshow("result",gs)
     k=cv2.waitKey(frametime)
     if k==ord("x"):
